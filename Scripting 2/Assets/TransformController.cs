@@ -10,8 +10,6 @@ public class TransformController : MonoBehaviour
     private void Update()
     {
         var x = Mathf.PingPong(Time.time * speed, distance);
-        var y = Mathf.PingPong(Time.time * speed, distance);
-        var z = Mathf.PingPong(Time.time * speed, distance);
         var p = new Vector3(x, 0, 0);
         transform.position = p;
         
